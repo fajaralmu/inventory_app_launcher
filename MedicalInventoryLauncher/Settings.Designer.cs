@@ -39,6 +39,7 @@
             this.textBoxTomcatPth = new System.Windows.Forms.TextBox();
             this.textBoxPgHomePath = new System.Windows.Forms.TextBox();
             this.textBoxDataPath = new System.Windows.Forms.TextBox();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -133,11 +134,22 @@
             this.textBoxDataPath.Size = new System.Drawing.Size(288, 20);
             this.textBoxDataPath.TabIndex = 12;
             // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(24, 221);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonSave.TabIndex = 13;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 406);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxDataPath);
             this.Controls.Add(this.textBoxPgHomePath);
             this.Controls.Add(this.textBoxTomcatPth);
@@ -169,5 +181,6 @@
         private System.Windows.Forms.TextBox textBoxTomcatPth;
         private System.Windows.Forms.TextBox textBoxPgHomePath;
         private System.Windows.Forms.TextBox textBoxDataPath;
+        private System.Windows.Forms.Button buttonSave;
     }
 }

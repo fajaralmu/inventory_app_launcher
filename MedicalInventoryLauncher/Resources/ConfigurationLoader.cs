@@ -21,6 +21,18 @@ namespace MedicalInventoryLauncher.Resources
             }
         }
 
+        public string tomcatCommandStart
+        {
+            get { return properties.get("tomcat_command_start"); }
+        }
+        public string tomcatCommandStop
+        {
+            get { return properties.get("tomcat_command_shutdown"); }
+        }
+        public string pgCommandStart
+        {
+            get { return properties.get("postgres_command"); }
+        } 
 
         public string tomcatHomePath
         {
@@ -56,6 +68,10 @@ namespace MedicalInventoryLauncher.Resources
         {
             string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Resources/config.properties");
             properties = new Properties(path);
+        }
+        public void Save()
+        {
+            properties.Save();
         }
     }
 }
