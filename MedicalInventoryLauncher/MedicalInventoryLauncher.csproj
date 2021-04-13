@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CommandLineExecution.cs" />
     <Compile Include="Resources\ConfigurationLoader.cs" />
     <Compile Include="Resources\Properties.cs" />
     <Compile Include="Settings.cs">
