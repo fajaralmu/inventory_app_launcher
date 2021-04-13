@@ -1,0 +1,11 @@
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\bin\Debug\MedicalInventoryLauncher.exe.config
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\bin\Debug\MedicalInventoryLauncher.exe
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\bin\Debug\MedicalInventoryLauncher.pdb
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Debug\MedicalInventoryLauncher.csprojResolveAssemblyReference.cache
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Debug\MedicalInventoryLauncher.Form1.resources
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Debug\MedicalInventoryLauncher.Properties.Resources.resources
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Debug\MedicalInventoryLauncher.csproj.GenerateResource.Cache
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Debug\MedicalInventoryLauncher.exe
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Debug\MedicalInventoryLauncher.pdb
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Debug\MedicalInventoryLauncher.Settings.resources
+D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\bin\Debug\Resources\config.properties
