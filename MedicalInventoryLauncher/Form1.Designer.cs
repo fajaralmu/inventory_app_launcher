@@ -85,6 +85,7 @@
             this.btnStartDatabase.TabIndex = 4;
             this.btnStartDatabase.Text = "Start Database";
             this.btnStartDatabase.UseVisualStyleBackColor = true;
+            this.btnStartDatabase.Click += new System.EventHandler(this.btnStartDatabase_Click);
             // 
             // btnStopDatabase
             // 
@@ -94,6 +95,7 @@
             this.btnStopDatabase.TabIndex = 5;
             this.btnStopDatabase.Text = "Stop Database";
             this.btnStopDatabase.UseVisualStyleBackColor = true;
+            this.btnStopDatabase.Click += new System.EventHandler(this.btnStopDatabase_Click);
             // 
             // Form1
             // 

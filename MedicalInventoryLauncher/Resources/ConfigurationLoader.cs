@@ -23,12 +23,16 @@ namespace MedicalInventoryLauncher.Resources
         }
         public string tomcatCommandStop
         {
-            get { return properties.get("tomcat_command_shutdown"); }
+            get { return properties.get("tomcat_command_stop"); }
         }
         public string pgCommandStart
         {
-            get { return properties.get("postgres_command"); }
-        } 
+            get { return properties.get("postgres_command_start"); }
+        }
+        public string pgCommandStop
+        {
+            get { return properties.get("postgres_command_stop"); }
+        }
 
         public string tomcatHomePath
         {

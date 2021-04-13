@@ -40,5 +40,15 @@ namespace MedicalInventoryLauncher
         {
             cmd.StopServer();
         }
+
+        private void btnStartDatabase_Click(object sender, EventArgs e)
+        {
+            cmd.StartDatabase();
+        }
+
+        private void btnStopDatabase_Click(object sender, EventArgs e)
+        {
+            cmd.StopDatabase();
+        }
     }
 }

@@ -18,33 +18,41 @@ namespace MedicalInventoryLauncher.Resources
 
         public void StartServer()
         {
-            var proc = new Process
-            {
-                StartInfo = new ProcessStartInfo
-                {
-                    FileName = "cmd.exe",
-                    Arguments = "/k "+loader.tomcatCommandStart,
-                    WorkingDirectory = @loader.tomcatHomePath
-                }
-            };
-
-            proc.Start();
-            //proc.WaitForExit();
+            Exec(loader.tomcatCommandStart,
+                    loader.tomcatHomePath);
         }
         public void StopServer()
+        {
+            Exec(loader.tomcatCommandStop,
+                    loader.tomcatHomePath);
+        }
+
+        public void StartDatabase()
+        {
+            Exec(loader.pgCommandStart.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\""),
+                       loader.postgreHomePath);
+
+        }
+
+        private void Exec(string arguments, string workingDirectory)
         {
             var proc = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "cmd.exe",
-                    Arguments = "/k " + loader.tomcatCommandStop,
-                    WorkingDirectory = @loader.tomcatHomePath
+                    Arguments = "/k " + arguments,
+                    WorkingDirectory = @workingDirectory
                 }
             };
 
             proc.Start();
-            //proc.WaitForExit();
+        }
+
+        public void StopDatabase()
+        {
+            Exec(loader.pgCommandStop.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\""), 
+                loader.postgreHomePath);
         }
     }
 }
