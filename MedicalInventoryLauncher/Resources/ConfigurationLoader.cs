@@ -1,6 +1,8 @@
 ﻿
- 
+
 using System.IO;
+using System.Net;
+using System.Net.Sockets;
 using System.Reflection;
 
 namespace MedicalInventoryLauncher.Resources
@@ -12,9 +14,7 @@ namespace MedicalInventoryLauncher.Resources
         public string postgreHomePath
         {
             get { return properties.get("postgres_home"); } 
-            set {
-                properties.set("postgres_home", value);
-            }
+            set {properties.set("postgres_home", value);}
         }
 
         public string tomcatCommandStart
@@ -37,17 +37,27 @@ namespace MedicalInventoryLauncher.Resources
         public string tomcatHomePath
         {
             get { return properties.get("tomcat_home"); }
-            set
-            {
-                properties.set("tomcat_home", value);
-            }
+            set{properties.set("tomcat_home", value);}
         }
         public string postgreDataPath
         {
             get { return properties.get("postgres_data"); }
-            set
+            set{ properties.set("postgres_data", value); }
+        }
+        public string localAddress
+        {
+            get
             {
-                properties.set("postgres_data", value);
+                IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
+
+                foreach (IPAddress a in localIPs)
+                {
+                    if (IPAddress.Parse(a.ToString()).AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        return a.ToString();
+                    }
+                }
+                return null;
             }
         }
 

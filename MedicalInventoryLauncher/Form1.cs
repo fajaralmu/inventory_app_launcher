@@ -9,10 +9,14 @@ namespace MedicalInventoryLauncher
     {
 
         CommandLineExecution cmd = new CommandLineExecution();
+        ConfigurationLoader loader = ConfigurationLoader.Instance();
         public Form1()
         {
             InitializeComponent();
+            textIPAddress.Text = loader.localAddress;
         }
+
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             AllocConsole();

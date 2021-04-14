@@ -35,6 +35,8 @@
             this.btnStopServer = new System.Windows.Forms.Button();
             this.btnStartDatabase = new System.Windows.Forms.Button();
             this.btnStopDatabase = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textIPAddress = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +51,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 61);
+            this.button1.Location = new System.Drawing.Point(29, 195);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 23);
             this.button1.TabIndex = 1;
@@ -59,7 +61,7 @@
             // 
             // btnStartServer
             // 
-            this.btnStartServer.Location = new System.Drawing.Point(29, 102);
+            this.btnStartServer.Location = new System.Drawing.Point(29, 147);
             this.btnStartServer.Name = "btnStartServer";
             this.btnStartServer.Size = new System.Drawing.Size(127, 23);
             this.btnStartServer.TabIndex = 2;
@@ -69,7 +71,7 @@
             // 
             // btnStopServer
             // 
-            this.btnStopServer.Location = new System.Drawing.Point(29, 147);
+            this.btnStopServer.Location = new System.Drawing.Point(206, 147);
             this.btnStopServer.Name = "btnStopServer";
             this.btnStopServer.Size = new System.Drawing.Size(127, 23);
             this.btnStopServer.TabIndex = 3;
@@ -79,7 +81,7 @@
             // 
             // btnStartDatabase
             // 
-            this.btnStartDatabase.Location = new System.Drawing.Point(29, 191);
+            this.btnStartDatabase.Location = new System.Drawing.Point(29, 104);
             this.btnStartDatabase.Name = "btnStartDatabase";
             this.btnStartDatabase.Size = new System.Drawing.Size(127, 23);
             this.btnStartDatabase.TabIndex = 4;
@@ -89,7 +91,7 @@
             // 
             // btnStopDatabase
             // 
-            this.btnStopDatabase.Location = new System.Drawing.Point(29, 236);
+            this.btnStopDatabase.Location = new System.Drawing.Point(206, 104);
             this.btnStopDatabase.Name = "btnStopDatabase";
             this.btnStopDatabase.Size = new System.Drawing.Size(127, 23);
             this.btnStopDatabase.TabIndex = 5;
@@ -97,12 +99,30 @@
             this.btnStopDatabase.UseVisualStyleBackColor = true;
             this.btnStopDatabase.Click += new System.EventHandler(this.btnStopDatabase_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(215, 204);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Local IP";
+            // 
+            // textIPAddress
+            // 
+            this.textIPAddress.Location = new System.Drawing.Point(268, 204);
+            this.textIPAddress.Name = "textIPAddress";
+            this.textIPAddress.Size = new System.Drawing.Size(100, 20);
+            this.textIPAddress.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 371);
+            this.Controls.Add(this.textIPAddress);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnStopDatabase);
             this.Controls.Add(this.btnStartDatabase);
             this.Controls.Add(this.btnStopServer);
@@ -127,6 +147,8 @@
         private System.Windows.Forms.Button btnStopServer;
         private System.Windows.Forms.Button btnStartDatabase;
         private System.Windows.Forms.Button btnStopDatabase;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textIPAddress;
     }
 }
 
