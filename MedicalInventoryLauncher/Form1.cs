@@ -19,7 +19,7 @@ namespace MedicalInventoryLauncher
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            AllocConsole();
+            //AllocConsole();
         }
 
         [DllImport("kernel32.dll", SetLastError = true)]

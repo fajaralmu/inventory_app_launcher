@@ -52,9 +52,10 @@ namespace MedicalInventoryLauncher.Resources
 
                 foreach (IPAddress a in localIPs)
                 {
-                    if (IPAddress.Parse(a.ToString()).AddressFamily == AddressFamily.InterNetwork)
+                    string address = (a.ToString());
+                    if (address.StartsWith("192.168.") && IPAddress.Parse(address).AddressFamily == AddressFamily.InterNetwork)
                     {
-                        return a.ToString();
+                        return address;
                     }
                 }
                 return null;

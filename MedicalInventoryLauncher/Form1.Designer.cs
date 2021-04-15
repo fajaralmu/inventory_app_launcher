@@ -37,6 +37,8 @@
             this.btnStopDatabase = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textIPAddress = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -115,12 +117,32 @@
             this.textIPAddress.Size = new System.Drawing.Size(100, 20);
             this.textIPAddress.TabIndex = 7;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(195, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Start = 1. Start Database 2. Start Server";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(195, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Stop = 1. Stop Database 2. Stop Server";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 371);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textIPAddress);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnStopDatabase);
@@ -149,6 +171,8 @@
         private System.Windows.Forms.Button btnStopDatabase;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textIPAddress;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
