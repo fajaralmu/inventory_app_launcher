@@ -28,7 +28,7 @@ namespace MedicalInventoryLauncher.Resources
         public void StartDatabase()
         {
             string startCommand = loader.pgCommandStart.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\"");
-            Exec(startCommand, loader.postgreHomePath,   "/c");
+            Exec(startCommand, loader.postgreHomePath);
 
         }
 
@@ -50,7 +50,7 @@ namespace MedicalInventoryLauncher.Resources
         public void StopDatabase()
         {
             string stopCommand = loader.pgCommandStop.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\"");
-            Exec(stopCommand, loader.postgreHomePath);
+            Exec(stopCommand, loader.postgreHomePath, "/c");
         }
     }
 }
