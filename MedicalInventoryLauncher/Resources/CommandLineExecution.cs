@@ -18,30 +18,28 @@ namespace MedicalInventoryLauncher.Resources
 
         public void StartServer()
         {
-            Exec(loader.tomcatCommandStart,
-                    loader.tomcatHomePath);
+            Exec(loader.tomcatCommandStart, loader.tomcatHomePath, "/c");
         }
         public void StopServer()
         {
-            Exec(loader.tomcatCommandStop,
-                    loader.tomcatHomePath);
+            Exec(loader.tomcatCommandStop,  loader.tomcatHomePath, "/c");
         }
 
         public void StartDatabase()
         {
-            Exec(loader.pgCommandStart.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\""),
-                       loader.postgreHomePath);
+            string startCommand = loader.pgCommandStart.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\"");
+            Exec(startCommand, loader.postgreHomePath,   "/c");
 
         }
 
-        private void Exec(string arguments, string workingDirectory)
+        private void Exec(string arguments, string workingDirectory, string prefix = "/k")
         {
             var proc = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "cmd.exe",
-                    Arguments = "/k " + arguments,
+                    Arguments = prefix + arguments,
                     WorkingDirectory = @workingDirectory
                 }
             };
@@ -51,8 +49,8 @@ namespace MedicalInventoryLauncher.Resources
 
         public void StopDatabase()
         {
-            Exec(loader.pgCommandStop.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\""), 
-                loader.postgreHomePath);
+            string stopCommand = loader.pgCommandStop.Replace("${PG_DATA}", "\"" + loader.postgreDataPath + "\"");
+            Exec(stopCommand, loader.postgreHomePath);
         }
     }
 }
