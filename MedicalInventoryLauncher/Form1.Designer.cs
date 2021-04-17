@@ -47,9 +47,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(22, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 37);
+            this.label1.Size = new System.Drawing.Size(338, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Inventory App Launcher";
+            this.label1.Text = "Application Launcher";
             // 
             // button1
             // 
@@ -104,7 +104,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 204);
+            this.label2.Location = new System.Drawing.Point(26, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 6;
@@ -112,9 +112,9 @@
             // 
             // textIPAddress
             // 
-            this.textIPAddress.Location = new System.Drawing.Point(268, 204);
+            this.textIPAddress.Location = new System.Drawing.Point(29, 266);
             this.textIPAddress.Name = "textIPAddress";
-            this.textIPAddress.Size = new System.Drawing.Size(100, 20);
+            this.textIPAddress.Size = new System.Drawing.Size(127, 20);
             this.textIPAddress.TabIndex = 7;
             // 
             // label3
@@ -140,7 +140,7 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 371);
+            this.ClientSize = new System.Drawing.Size(414, 371);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textIPAddress);

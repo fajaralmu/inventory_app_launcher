@@ -1,5 +1,6 @@
 ﻿using MedicalInventoryLauncher.Resources;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -77,6 +78,33 @@ namespace MedicalInventoryLauncher
         private void buttonSave_Click(object sender, EventArgs e)
         {
             loader.Save();
+        }
+
+        private void btnOpenTomcatHome_Click(object sender, EventArgs e)
+        {
+            openPath(loader.tomcatHomePath);
+        }
+
+        private void openPath(string path)
+        {
+            try
+            {
+                Process.Start(@path);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void btnOpenPgHome_Click(object sender, EventArgs e)
+        {
+            openPath(loader.postgreHomePath);
+        }
+
+        private void btnOpenPgData_Click(object sender, EventArgs e)
+        {
+            openPath(loader.postgreDataPath);
         }
     }
 

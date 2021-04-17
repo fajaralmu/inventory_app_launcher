@@ -8,4 +8,3 @@ D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInven
 D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Release\MedicalInventoryLauncher.csproj.GenerateResource.Cache
 D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Release\MedicalInventoryLauncher.exe
 D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Release\MedicalInventoryLauncher.pdb
-D:\Development\Visual Studio 2015\Projects\MedicalInventoryLauncher\MedicalInventoryLauncher\obj\Release\MedicalInventoryLauncher.csprojResolveAssemblyReference.cache

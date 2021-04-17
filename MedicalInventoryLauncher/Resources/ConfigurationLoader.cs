@@ -58,7 +58,7 @@ namespace MedicalInventoryLauncher.Resources
                         return address;
                     }
                 }
-                return null;
+                return "IP address not found";
             }
         }
 

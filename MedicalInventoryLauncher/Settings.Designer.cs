@@ -40,6 +40,9 @@
             this.textBoxPgHomePath = new System.Windows.Forms.TextBox();
             this.textBoxDataPath = new System.Windows.Forms.TextBox();
             this.buttonSave = new System.Windows.Forms.Button();
+            this.btnOpenTomcatHome = new System.Windows.Forms.Button();
+            this.btnOpenPgHome = new System.Windows.Forms.Button();
+            this.btnOpenPgData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -144,11 +147,44 @@
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
+            // btnOpenTomcatHome
+            // 
+            this.btnOpenTomcatHome.Location = new System.Drawing.Point(424, 74);
+            this.btnOpenTomcatHome.Name = "btnOpenTomcatHome";
+            this.btnOpenTomcatHome.Size = new System.Drawing.Size(75, 23);
+            this.btnOpenTomcatHome.TabIndex = 14;
+            this.btnOpenTomcatHome.Text = "Open";
+            this.btnOpenTomcatHome.UseVisualStyleBackColor = true;
+            this.btnOpenTomcatHome.Click += new System.EventHandler(this.btnOpenTomcatHome_Click);
+            // 
+            // btnOpenPgHome
+            // 
+            this.btnOpenPgHome.Location = new System.Drawing.Point(424, 121);
+            this.btnOpenPgHome.Name = "btnOpenPgHome";
+            this.btnOpenPgHome.Size = new System.Drawing.Size(75, 23);
+            this.btnOpenPgHome.TabIndex = 15;
+            this.btnOpenPgHome.Text = "Open";
+            this.btnOpenPgHome.UseVisualStyleBackColor = true;
+            this.btnOpenPgHome.Click += new System.EventHandler(this.btnOpenPgHome_Click);
+            // 
+            // btnOpenPgData
+            // 
+            this.btnOpenPgData.Location = new System.Drawing.Point(424, 169);
+            this.btnOpenPgData.Name = "btnOpenPgData";
+            this.btnOpenPgData.Size = new System.Drawing.Size(75, 23);
+            this.btnOpenPgData.TabIndex = 16;
+            this.btnOpenPgData.Text = "Open";
+            this.btnOpenPgData.UseVisualStyleBackColor = true;
+            this.btnOpenPgData.Click += new System.EventHandler(this.btnOpenPgData_Click);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 406);
+            this.ClientSize = new System.Drawing.Size(505, 406);
+            this.Controls.Add(this.btnOpenPgData);
+            this.Controls.Add(this.btnOpenPgHome);
+            this.Controls.Add(this.btnOpenTomcatHome);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxDataPath);
             this.Controls.Add(this.textBoxPgHomePath);
@@ -182,5 +218,8 @@
         private System.Windows.Forms.TextBox textBoxPgHomePath;
         private System.Windows.Forms.TextBox textBoxDataPath;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button btnOpenTomcatHome;
+        private System.Windows.Forms.Button btnOpenPgHome;
+        private System.Windows.Forms.Button btnOpenPgData;
     }
 }
