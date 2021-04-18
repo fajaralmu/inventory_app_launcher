@@ -1,5 +1,6 @@
 ﻿using MedicalInventoryLauncher.Resources;
 using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -14,9 +15,24 @@ namespace MedicalInventoryLauncher
         {
             InitializeComponent();
             textIPAddress.Text = loader.localAddress;
+            
         }
 
-        
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Exit Application?",
+                "Close Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result.Equals(DialogResult.Yes))
+            {
+                e.Cancel = false;
+            } else
+            {
+                e.Cancel = true;
+            }
+            
+        }
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //AllocConsole();

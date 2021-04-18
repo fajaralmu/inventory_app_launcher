@@ -86,10 +86,10 @@ namespace MedicalInventoryLauncher.Resources
         {
             try {
                 properties.Save();
-                MessageBox.Show("Configuration has been saved");
+                MessageBox.Show("Configuration has been saved", "Info");
             } catch (Exception ex)
             {
-                MessageBox.Show("ERROR: Configuration has not been saved: "+ ex.Message);
+                MessageBox.Show("ERROR: Configuration has not been saved: "+ ex.Message, "Error");
             }
             
         }
