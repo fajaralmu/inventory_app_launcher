@@ -1,9 +1,11 @@
 ﻿
 
+using System;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace MedicalInventoryLauncher.Resources
 {
@@ -82,7 +84,14 @@ namespace MedicalInventoryLauncher.Resources
         }
         public void Save()
         {
-            properties.Save();
+            try {
+                properties.Save();
+                MessageBox.Show("Configuration has been saved");
+            } catch (Exception ex)
+            {
+                MessageBox.Show("ERROR: Configuration has not been saved: "+ ex.Message);
+            }
+            
         }
     }
 }
